@@ -1,0 +1,39 @@
+input{
+  font-family: Helvetica, Arial, sans-serif;
+  width: 500px;
+  margin: 30px 10px 30px 10px;
+  height: 30px;
+  border-radius: 8px;
+  border: solid 1px rgb(203, 203, 203);
+  background-color: rgb(241, 241, 241);
+  display: inline;
+}
+
+button{
+  width: 80px;
+  height: 34px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 6px;
+  margin: 3px;
+  background-color: rgb(65, 65, 203);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+button:hover, button:active, button:focus{
+  background-color: rgb(49, 49, 231);
+  color: white;
+  box-shadow: 0px 5px 15px rgba(114, 114, 250, 0.141);
+}
+
+li{
+  list-style-type: none;
+  padding: 10px 0;
+  border-bottom: solid 1px rgb(203, 203, 203);
+}
+
+div{
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 10px;
+}
