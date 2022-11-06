@@ -6,10 +6,7 @@ import { Todos } from '../classes/todos';
   styleUrls: ['./todos.page.scss']
 })
 export class TodosPage implements OnInit {
-  listaTodos: Todos[] = [{
-    todo: "fare l'esercizio",
-  }]
-
+listaTodos: Todos[]|undefined;
 
   constructor() { }
 

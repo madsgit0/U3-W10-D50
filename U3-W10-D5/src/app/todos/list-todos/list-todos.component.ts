@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todos } from 'src/app/classes/todos';
+import { TodosService } from 'src/app/todos.service';
 
 @Component({
   selector: 'app-list-todos',
@@ -7,12 +8,16 @@ import { Todos } from 'src/app/classes/todos';
   styleUrls: ['./list-todos.component.scss']
 })
 export class ListTodosComponent implements OnInit {
+  todo: Todos[];
 
-  @Input() todosList?: Todos[];
-
-  constructor() { }
+  constructor(private todosService: TodosService) { }
 
   ngOnInit(): void {
+    this.todo = this.todosService.listaTodos;
+  }
+
+  removeTodo(id: Todos): {
+    this.todosService.removeTodo(id);
   }
 
 }
