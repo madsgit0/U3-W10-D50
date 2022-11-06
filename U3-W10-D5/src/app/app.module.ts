@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TodosPage } from './todos/todos.page';
 import { CompletatiPage } from './completati/completati.page';
+import { AddTodoComponent } from './todos/add-todo/add-todo.component';
+import { ListTodosComponent } from './todos/list-todos/list-todos.component';
 
 const routes: Routes = [
   {
@@ -27,7 +29,9 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     TodosPage,
-    CompletatiPage
+    CompletatiPage,
+    AddTodoComponent,
+    ListTodosComponent
   ],
   imports: [
     BrowserModule,
